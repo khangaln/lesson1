@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: mediumpurple;
+  color: white;
+}
+.topnav b {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+h1{
+  text-align: center;
+  font-size: 20px;
+}
+
+h2{
+  text-align: center;
+  font-size: 15px;
+}
+h3{
+  text-align: center;
+  font-size: 20px;
+}
+h4{
+  text-align: center;
+  font-size: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+}
+h5{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 300px;
+}
+h6{
+  font-size: 20px;
+  color: white;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+header{
+  padding-left: 220px;
+  color: white;
+  font-size: 10px;
+}
+.button {
+  background-color: #5D3FD3; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  button-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 800px;
+
+}
+.button2 {
+  background-color: white; 
+  border: 1px solid black;
+  color: darkslateblue;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 640px;
+  margin-top: -100px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button2 {
+  background-color: darkslateblue; 
+  color: white; 
+  border: 1px solid #5D3FD3;
+}
+
+.button2:hover {
+  background-color: #5D3FD3;
+  color: white;
+}
+p{
+  text-align: center;
+}
+img{
+  margin: auto;
+  display: block;
+}
+div.ex1 {
+  font-family: verdana;
+  font-size: 25px;
+  background-color: mediumpurple;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+div.relative {
+  font-family: verdana;
+  font-size: 20px;
+  background-color: mediumpurple;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-right: 300px;
+  padding-bottom: 100px;
+  padding-left: 300px;
+  position: relative;
+}
+
+div.absolute {
+  position: absolute;
+  top: 700px;
+  right: 800px;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+div.ex2 {
+  position: absolute;
+  top: 700px;
+  right: 500px;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+div.ex3 {
+  position: absolute;
+  top: 700px;
+  right: 1100px;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+div.ex4 {
+  position: absolute;
+  background-color: black;
+  top: 1300px;
+  right: 500px;
+  width: 290px;
+  height: 290px;
+  background-color: lightgreen;
+  color: black;
+  border: 0.5px solid mediumpurple;
+}
+div.ex5 {
+  position: absolute;
+  top: 1300px;
+  right: 800px;
+  width: 290px;
+  height: 290px;
+  background-color: lightpink;
+  color: black;
+  border: 0.5px solid mediumpurple;
+}
+div.ex6 {
+  position: absolute;
+  top: 1300px;
+  right: 1100px;
+  width: 290px;
+  height: 290px;
+  background-color: lightskyblue;
+  color: black;
+  border: 0.5px solid mediumpurple;
+}
+div.ex7 {
+  position: absolute;
+  top: 1600px;
+  right: 500px;
+  width: 290px;
+  height: 290px;
+  background-color: lightgray;
+  color: black;
+  border: 0.5px solid mediumpurple;
+}
+div.ex8 {
+  position: absolute;
+  top: 1600px;
+  right: 800px;
+  width: 290px;
+  height: 290px;
+  background-color: greenyellow;
+  color: black;
+  border: 0.5px solid mediumpurple;
+}
+div.ex9 {
+  position: absolute;
+  top: 1600px;
+  right: 1100px;
+  width: 290px;
+  height: 290px;
+  background-color: palevioletred;
+  color: black;
+  border: 0.5px solid mediumpurple;
+}
+div.ex10 {
+  background-color: mediumpurple;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-right: 300px;
+  padding-bottom: 300px;
+  padding-left: 300px;
+  position: relative;
+  margin-top: 250px;
+}
+div.ex11 {
+  position: absolute;
+  top: 2195px;
+  right: 550px;
+  width: 800px;
+  height: 200px;
+  background-color: darkslateblue;
+  color: black;
+  border: 1px solid black;
+}
+svg {
+    color: mediumpurple;
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+    margin-left: 110px;
+    display: block;
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Download CV</a>
+  <a href="#about">Contact</a>
+  <a href="#contact">Projects</a>
+  <a href="#contact">About Me</a>
+  <b href="#contact">Portfolio</b>
+</div>
+
+<h1>Hard working and intelligent student</h1>
+<h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+
+
+
+
+<img src="portfolio_boy.png" width="250" height="200">
+
+
+
+
+
+
+<div class="ex1">HI, I'M..........NICE TO MEET YOU</div>
+<div class="relative">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+
+<div class="absolute"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm-32-316v116h-67c-10.7 0-16 12.9-8.5 20.5l99 99c4.7 4.7 12.3 4.7 17 0l99-99c7.6-7.6 2.2-20.5-8.5-20.5h-67V140c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12z"/></svg><h3>Skill II</h3><h4>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4></div>
+
+
+<div class="ex2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256zm72 20v-40c0-6.6 5.4-12 12-12h116v-67c0-10.7 12.9-16 20.5-8.5l99 99c4.7 4.7 4.7 12.3 0 17l-99 99c-7.6 7.6-20.5 2.2-20.5-8.5v-67H140c-6.6 0-12-5.4-12-12z"/></svg><h3>Skill III</h3><h4>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4></div>
+
+
+<div class="ex3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zm448 0c0 110.5-89.5 200-200 200S56 366.5 56 256 145.5 56 256 56s200 89.5 200 200zm-72-20v40c0 6.6-5.4 12-12 12H256v67c0 10.7-12.9 16-20.5 8.5l-99-99c-4.7-4.7-4.7-12.3 0-17l99-99c7.6-7.6 20.5-2.2 20.5 8.5v67h116c6.6 0 12 5.4 12 12z"/></svg></svg><h3>Skill I</h3><h4>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4></div>
+
+
+
+<h5>MY PROJECTS</h5>
+
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+<div class="ex4"></div>
+<div class="ex5"></div>
+<div class="ex6"></div>
+<div class="ex7"></div>
+<div class="ex8"></div>
+<div class="ex9"></div>
+
+<button class="button">See more projects</button>
+
+<div class="ex10"></div>
+<div class="ex11"><h6>Start A Project</h6><header>Interested in Workinng Together? We Should Quenue Up A Chat. I'll Buy The Coffee.</header><button class="button button2">Let's do this</button></div>
+
+</div>
+</body>
+</html>

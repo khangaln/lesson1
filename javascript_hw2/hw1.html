@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Гэрийн даалгавар 1</h1>
+
+<p>student обьектоос age property-г устгах JavaScript програм бичнэ үү. Мөн өмнөх болон
+сүүлийн утгуудыг хэвлэн харуулна уу.</p>
+
+<p1 id="demo"></p1>
+
+<script>
+var student = {
+  name: "Emma",
+  sclass: "VI",
+  age: 18,
+};
+
+const {age, ...newObj} = student;
+document.getElementById("demo").innerHTML =
+"Өмнөх утга: " + student.name + " is " + student.age + " years old. " +
+"Дараах утга: " + student.name + " is " + newObj.age + " years old.";
+</script>
+
+</body>
+</html>

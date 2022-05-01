@@ -12,100 +12,38 @@
 	background-size: cover;
 }
  
-nav{
-  display: flex;
-  height: 60px;
-  width: 100%;
-  background: black;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px 0 100px;
-  flex-wrap: wrap;
+.mynav{
+  background-color:transparent;
+  margin-top:0px;
+  border-bottom: 3px solid darkcyan;
 }
-nav .logo{
-  color: #F0B27A;
-  font-size: 35px;
+.mynav .container-fluid a{
+  font-family: sans-serif;
+  color: darkcyan;
+  font-size: 47px;
+  margin-left: 35px;
+}
+.mynav .nav-item a{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 15px;
+    margin-right: 30px;
+}
+.mynav .nav-item:last-child{
+    padding: -2px;
+    background-color: darkcyan;
+    border-radius: 10px;
+    margin-right: -10px;
+}
+.collapse.navbar-collapse.menu {
   font-weight: 600;
-}
-nav ul{
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-nav ul li{
-  margin: 0 5px;
-}
-nav ul li a{
-  color: #F0B27A;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
-nav ul li a.active,
-nav ul li a:hover{
-  color: #F0B27A;
-  background: darkcyan;
-}
-nav .menu-btn i{
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
-}
-input[type="checkbox"]{
-  display: none;
-}
-@media (max-width: 1000px){
-  nav{
-    padding: 0 40px 0 50px;
-  }
-}
-@media (max-width: 920px) {
-  nav .menu-btn i{
-    display: block;
-  }
-  #click:checked ~ .menu-btn i:before{
-    content: "\f00d";
-  }
-  nav ul{
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    background: #111;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    transition: all 0.3s ease;
-  }
-  #click:checked ~ ul{
-    left: 0;
-  }
-  nav ul li{
-    width: 100%;
-    margin: 40px 0;
-  }
-  nav ul li a{
-    width: 100%;
-    margin-left: -100%;
-    display: block;
-    font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  #click:checked ~ ul li a{
-    margin-left: 0px;
-  }
-  nav ul li a.active,
-  nav ul li a:hover{
-    background: none;
-    color: darkcyan;
-  }
+  color:darkcyan;
 }
 
+.collapse.navbar-collapse.menu a {
+    color: white;
+}
 
 .text-area{
 	font-size: 70px;
